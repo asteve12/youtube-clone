@@ -1,0 +1,19 @@
+@media (max-width: 1199.98px) {
+  .cont1 {
+    display: none;
+  }
+  .cont2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .cont1 {
+    display: block;
+  }
+  .cont2 {
+    display: none;
+  }
+}

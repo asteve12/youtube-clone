@@ -1,0 +1,17 @@
+@media (max-width: 767.98px) {
+  .cont1 {
+    display: none;
+  }
+  .cont2 {
+    display: block;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .cont1 {
+    display: block;
+  }
+  .cont2 {
+    display: none;
+  }
+}
