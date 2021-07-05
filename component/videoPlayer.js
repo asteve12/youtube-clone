@@ -61,7 +61,7 @@ const Videoplayer = (props) => {
               </div>
             </div>
             {/*views */}
-            <div className='title-container-2 bg-primary row '>
+            <div className='title-container-2  row '>
               <div className='col-5  p-0 '>
                 <div className='col-12  '>{video.views}.3 days ago</div>
               </div>
