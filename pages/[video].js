@@ -17,6 +17,7 @@ import Content from '../component/Content';
 import { withRouter } from 'next/router';
 import Videoplayer from '../component/videoPlayer';
 import { Wave } from 'react-animated-text';
+import Link from 'next/link';
 //css
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
@@ -65,19 +66,22 @@ function Video(props) {
             effectChange='2'
           />
 
-          <button
-            id='home-btn'
-            style={{
-              backgroundColor: 'white',
-              color: 'red',
-              outline: 'none',
-              border: 'none',
-              borderRadius: '15px',
-              padding: '1%',
-            }}
-          >
-            Visit Home
-          </button>
+          <Link href='/'>
+            <button
+              id='home-btn'
+              style={{
+                backgroundColor: 'white',
+                color: 'red',
+                outline: 'none',
+                border: 'none',
+                borderRadius: '15px',
+                padding: '1%',
+                width: '40%',
+              }}
+            >
+              Visit Home
+            </button>
+          </Link>
         </div>
       </div>
       <div className={`${style.main}`}>
