@@ -28,4 +28,7 @@
   .main {
     display: none;
   }
+  .message {
+    font-size: 0.6em;
+  }
 }
