@@ -32,3 +32,8 @@
     font-size: 0.6em;
   }
 }
+@media (min-width: 500px) {
+  .main {
+    display: block;
+  }
+}

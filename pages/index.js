@@ -40,7 +40,6 @@ import Head from 'next/head';
 import Header from '../component/Header';
 import Content from '../component/Content';
 import Sidebar from '../component/Sidebar';
-import Link from 'next/link';
 
 const useStyle = makeStyles({
   root: {
