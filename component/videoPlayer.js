@@ -105,7 +105,10 @@ const Videoplayer = (props) => {
 
               <div className='col-3 ml-auto m-0 '>
                 <div className='row'>
-                  <div className='ml-auto rounded text-white p-2  '>
+                  <div
+                    className='ml-auto rounded text-white p-2  '
+                    style={{ backgroundColor: 'red' }}
+                  >
                     subscribe
                   </div>
                 </div>
@@ -225,7 +228,7 @@ const Videoplayer = (props) => {
                 <span className='w-100'> {video.views}.3 days ago</span>
               </div>
               {/*like btn*/}
-              <div className=' col-md-8 col-sm-10  col-lg-8  ml-auto'>
+              <div className=' col-md-8 col-sm-10  col-lg-8     ml-auto'>
                 <div className='text-right  '>
                   <span className='ml-auto mr-0 p-2'>
                     <ThumbUpAltIcon></ThumbUpAltIcon>
