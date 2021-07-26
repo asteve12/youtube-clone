@@ -40,7 +40,7 @@ const Videoplayer = (props) => {
   };
   return (
     <div className='row '>
-      <div className={`col-7    ${style.cont1}`}>
+      <div className={`col-7   ${style.cont1}`}>
         {/*video section*/}
         <div className='video-container'>
           <Videocontainer>

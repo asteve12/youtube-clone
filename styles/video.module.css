@@ -20,20 +20,8 @@
 .main {
   display: block;
 }
-
-@media (max-width: 500px) {
-  .mobileVersion {
-    display: flex;
-  }
-  .main {
-    display: none;
-  }
-  .message {
-    font-size: 0.6em;
-  }
-}
-@media (min-width: 500px) {
-  .main {
-    display: block;
+@media (max-width: 600px) {
+  .video-container {
+    padding: 0px !important;
   }
 }
