@@ -58,7 +58,8 @@ function Video(props) {
   const videoObj = { title, views, like, dislike, description, date };
   return (
     <>
-      <div className={`mobile-version   ${style.mobileVersion}`}>
+      {/*
+        <div className={`mobile-version   ${style.mobileVersion}`}>
         <div className={`${style.message}`}>
           <Wave
             text='Mobile Version Not Available'
@@ -83,13 +84,14 @@ function Video(props) {
             </button>
           </Link>
         </div>
-      </div>
+      </div>*/}
+
       <div className={`${style.main}`}>
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <Header></Header>
 
           <div
-            className='container-fluid  bg-light h-100 p-5'
+            className='container-fluid  bg-light h-100  video-container'
             style={{ height: '2000px' }}
           >
             <Videoplayer video={videoObj}></Videoplayer>
