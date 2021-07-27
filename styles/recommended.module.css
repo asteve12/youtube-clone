@@ -1,3 +1,22 @@
+.interest {
+  background-color: green;
+}
+@media (min-width: 580px) {
+  .interest {
+    width: 200px !important;
+    background-color: yellow !important;
+  }
+  .interested {
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 772px) {
+  .interested {
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .cont1 {
     display: none;
@@ -16,4 +35,9 @@
   .cont2 {
     display: none;
   }
+}
+#ade {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
