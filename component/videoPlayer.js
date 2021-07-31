@@ -235,7 +235,7 @@ const Videoplayer = (props) => {
                 <div className=' '>
                   <span className='ml-auto mr-0 p-2'>
                     <ThumbUpAltIcon></ThumbUpAltIcon>
-                    {video.like}
+                    {video.like}k
                   </span>
                   {/*dislike btn*/}
                   <span className='ml-auto mr-0 p-2'>
