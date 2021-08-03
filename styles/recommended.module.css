@@ -1,21 +1,21 @@
 .interest {
-  background-color: green;
+  /*background-color: green;*/
 }
-@media (min-width: 580px) {
+@media (min-width: 578px) {
   .interest {
     width: 200px !important;
-    background-color: yellow !important;
+    /*background-color: yellow !important;*/
   }
   .interested {
     width: 80% !important;
-    background-color: blue !important;
+    /*background-color: blue !important;*/
     margin-left: -10px !important;
   }
 }
 @media (min-width: 768px) {
   .interested {
     width: 80% !important;
-    background-color: red !important;
+    /*background-color: red !important;*/
     margin-left: auto !important;
   }
 }

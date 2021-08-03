@@ -173,7 +173,7 @@ const PageContent = (props) => {
           {props.searchPage ? (
             <div className='col-12'>
               <div className='row'>
-                <div className='col-lg-4 col-md-12 recommended-section'>
+                <div className='col-lg-12 col-md-12 recommended-section'>
                   <div
                     className='w-100 m-1'
                     style={{ height: '140px', cursor: 'pointer' }}
@@ -181,7 +181,9 @@ const PageContent = (props) => {
                     <img
                       onClick={handlePage}
                       className='w-100 h-100'
-                      style={{ objectFit: 'cover' }}
+                      style={{
+                        objectFit: 'cover',
+                      }}
                       src={props.thumbnail.url}
                     ></img>
                   </div>
@@ -466,6 +468,182 @@ function Content(props) {
                         classes={classes}
                         videoPage={props.videoPage}
                         searchPage={props.searchPage}
+                      ></PageContent>
+                    );
+                  })
+                : recommendedvideos.map((eachVideos) => {
+                    const { id } = eachVideos;
+                    const {
+                      channelId,
+                      channelTitle,
+                      description,
+                      publishedAt,
+                    } = eachVideos.snippet;
+                    const { title, desc } = eachVideos.snippet.localized;
+                    const { high } = eachVideos.snippet.thumbnails;
+                    const { viewCount } = eachVideos.statistics;
+
+                    return (
+                      <PageContent
+                        title={title}
+                        thumbnail={high}
+                        views={viewCount}
+                        publish={publishedAt}
+                        channelTitle={channelTitle}
+                        videoPage={props.videoPage}
+                        searchPage={props.searchPage}
+                        id={id}
+                        loading={loading}
+                        classes={classes}
+                      ></PageContent>
+                    );
+                  })}
+            </div>
+          </Container>
+          <Container
+            className={
+              props.videoPage
+                ? `${style.xtra}`
+                : `col-12  h-100 w-100 m-0 ${style.cont2}`
+            }
+          >
+            <hr></hr>
+            <br></br>
+            <Carousel
+              responsive={responsive}
+              customRightArrow={<CustomRightArrow></CustomRightArrow>}
+              customLeftArrow={<CustomLeftArrow></CustomLeftArrow>}
+            >
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+              <button
+                type='button'
+                className='btn  btn-outline-dark'
+                style={{ borderRadius: '70px' }}
+              >
+                Dark
+              </button>
+            </Carousel>
+            <br></br>
+            <hr></hr>
+
+            <div className='row justify-content-center m-1'>
+              {loading
+                ? recommendedvideos.map((eachVideo) => {
+                    return (
+                      <PageContent
+                        loading={loading}
+                        classes={classes}
                       ></PageContent>
                     );
                   })
