@@ -62,8 +62,8 @@ const Videoplayer = (props) => {
             </div>
             {/*views */}
             <div className='title-container-2  row '>
-              <div className='col-5  p-0 '>
-                <div className='col-12  '>{video.views}.3 days ago</div>
+              <div className='col-5   '>
+                <div classNapme='col-12  '>{video.views}.3 days ago</div>
               </div>
               {/*like btn*/}
               <div className=' col-7   ml-auto'>
@@ -222,17 +222,20 @@ const Videoplayer = (props) => {
             {/*views */}
             <div className='title-container-2  row'>
               <div
-                className='  p-0  col-sm-2  col-md-4 col-lg-4  '
+                className={`${style.interest} col-sm-12  col-md-4 col-lg-4 `}
                 style={{ overflow: 'hidden' }}
               >
-                <span className='w-100'> {video.views}.3 days ago</span>
+                <div id='ade'></div>
+                <span className='w-100'> {video.views}.3 days ag</span>
               </div>
               {/*like btn*/}
-              <div className=' col-md-8 col-sm-10  col-lg-8     ml-auto'>
-                <div className='text-right  '>
+              <div
+                className={`${style.interested} col-md-8 col-sm-10  col-lg-8 ml-auto`}
+              >
+                <div className=' '>
                   <span className='ml-auto mr-0 p-2'>
                     <ThumbUpAltIcon></ThumbUpAltIcon>
-                    {video.like}
+                    {video.like}k
                   </span>
                   {/*dislike btn*/}
                   <span className='ml-auto mr-0 p-2'>

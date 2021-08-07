@@ -1,3 +1,31 @@
+.interest {
+  /*background-color: green;*/
+}
+@media (min-width: 578px) {
+  .interest {
+    width: 200px !important;
+    /*background-color: yellow !important;*/
+  }
+  .interested {
+    width: 80% !important;
+    /*background-color: blue !important;*/
+    margin-left: -10px !important;
+  }
+}
+@media (min-width: 768px) {
+  .interested {
+    width: 80% !important;
+    /*background-color: red !important;*/
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 772px) {
+  .interested {
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .cont1 {
     display: none;
@@ -16,4 +44,9 @@
   .cont2 {
     display: none;
   }
+}
+#ade {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }

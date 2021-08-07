@@ -173,7 +173,7 @@ const PageContent = (props) => {
           {props.searchPage ? (
             <div className='col-12'>
               <div className='row'>
-                <div className='col-4'>
+                <div className='col-lg-12 col-md-12 recommended-section'>
                   <div
                     className='w-100 m-1'
                     style={{ height: '140px', cursor: 'pointer' }}
@@ -181,22 +181,24 @@ const PageContent = (props) => {
                     <img
                       onClick={handlePage}
                       className='w-100 h-100'
-                      style={{ objectFit: 'cover' }}
+                      style={{
+                        objectFit: 'cover',
+                      }}
                       src={props.thumbnail.url}
                     ></img>
                   </div>
                 </div>
-                <div className='col-8'>
-                  <div className='row justify-content-center m-1 '>
-                    <div className='col-10 ' style={{ fontSize: '15px' }}>
+                <div className='col-12'>
+                  <div className='row  m-1 '>
+                    <div
+                      className='col-12 '
+                      style={{ fontSize: '15px', padding: '0px' }}
+                    >
                       {props.title}
                     </div>
                   </div>
                   <div className='row'>
-                    <div
-                      className='col-12 text-center'
-                      style={{ fontSize: '12px' }}
-                    >
+                    <div className='col-12 ' style={{ fontSize: '12px' }}>
                       <span>
                         <AccountCircleIcon></AccountCircleIcon>
                       </span>
@@ -498,7 +500,13 @@ function Content(props) {
                   })}
             </div>
           </Container>
-          <Container className={`col-12  h-100 w-100 m-0 ${style.cont2}`}>
+          <Container
+            className={
+              props.videoPage
+                ? `${style.xtra}`
+                : `col-12  h-100 w-100 m-0 ${style.cont2}`
+            }
+          >
             <hr></hr>
             <br></br>
             <Carousel
